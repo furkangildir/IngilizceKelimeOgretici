@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">İngilizce Kelime Öğretici</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_kelime_ekle">Kelime Ekle</string>
+    <string name="title_activity_kelime_goster">Kelime Öğren</string>
+    <string name="title_activity_kelimeleri_gor">Kelimeleri Gör</string>
+</resources>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.furkan.ingilizceKelimeOgretici.KelimeGoster"
+    android:background="@mipmap/arkaplan"
+    tools:showIn="@layout/activity_kelime_goster">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:id="@+id/tvIngKelime"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:background="#a1fa7b"
+            android:hint="İngilizce Kelime"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/etKelimeGir"
+            android:textColor="#000000"
+            android:background="#7bcbfa"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:hint="Türkçe Anlamı"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="Kontrol Et"
+                android:id="@+id/btnKontrolEt"
+                android:layout_toRightOf="@+id/tvDogru"
+                android:layout_toEndOf="@+id/tvDogru"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:background="#fffa71"
+                android:layout_marginRight="2dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="Kelime Getir"
+                android:id="@+id/btnKelimeGoster"
+                android:layout_toLeftOf="@+id/tvDogru"
+                android:layout_toStartOf="@+id/tvDogru"
+                android:textColor="#000000"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:background="#fffa71"
+                android:layout_marginLeft="2dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/tvTurkceGoster"
+            android:background="#a1fa7b"
+            android:textSize="35dp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/tvIngKelime"
+            android:layout_alignStart="@+id/tvIngKelime"
+            android:visibility="invisible"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doğru:"
+                android:id="@+id/textView4"
+                android:layout_toLeftOf="@+id/tvYanlis"
+                android:layout_toStartOf="@+id/tvYanlis"
+                android:textSize="30dp"
+                android:textColor="#000000"
+                android:layout_weight="1" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/tvDogru"
+                android:layout_alignLeft="@+id/textView4"
+                android:textSize="30dp"
+                android:textColor="#000000"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView4"
+                android:text="Yanlış:"
+                android:id="@+id/textView6"
+                android:textSize="30dp"
+                android:textColor="#000000"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/tvYanlis"
+                android:layout_alignLeft="@+id/textView6"
+                android:textSize="30dp"
+                android:textColor="#000000"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
